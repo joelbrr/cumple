@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
@@ -15,25 +16,24 @@ body {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* Aumentado de 500px a 600px */
-    width: 100%; /* Para asegurarte de que el contenedor no se ajuste automáticamente en pantallas más pequeñas */
+    max-width: 500px;
+    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
-
+/* Estilos para el título y texto */
 h1 {
     color: #343a40;
-    margin-bottom: 30px; /* Más espacio debajo del título */
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 1.2em;
     color: #495057;
-    margin-bottom: 20px; /* Más espacio debajo de los párrafos */
 }
 
-
+/* Botón de descubrimiento */
 button {
-    padding: 12px 30px;
+    padding: 10px 20px;
     font-size: 1em;
     color: #ffffff;
     background-color: #007bff;
@@ -41,16 +41,27 @@ button {
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 30px; /* Un poco más de margen superior */
-    width: 100%; /* Ocupar todo el ancho disponible en pantallas pequeñas */
-    max-width: 300px; /* No exceder este tamaño en pantallas grandes */
+    margin-top: 20px;
 }
-
 
 button:hover {
     background-color: #0056b3;
 }
 
+/* Estilos para la imagen de portada */
+.image-container {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Añadir espacio entre la imagen y el contenido */
+    text-align: center; /* Centrar la imagen */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para el contenido revelado */
 #surprise {
     margin-top: 30px;
     animation: fadeIn 2s ease-in-out;
@@ -60,15 +71,10 @@ button:hover {
     display: none;
 }
 
+/* Animación de fade-in */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-img {
-    max-width: 80%; /* Limitar el tamaño de las imágenes al 80% del ancho del contenedor */
-    height: auto; /* Mantener la proporción de la imagen */
-    border-radius: 10px;
-    margin-top: 20px;
-}
 
